@@ -241,6 +241,23 @@ The Standard Drone API is designed to abstract common functionality across multi
 
 ---
 
+## 10. Utility / Logging Methods
+
+### StandardDrone API
+- Not defined
+
+### Tello-SDK Mapping
+- `setLogLevel(Level)` - Configure logging verbosity
+- `getConnection()` - Get connection state/object
+
+**Implementation Notes:**
+- These are utility methods for debugging and monitoring
+- Not part of the standard API abstraction
+- Could be exposed through implementation-specific interfaces
+- Logging configuration is typically handled outside the drone API
+
+---
+
 ## Summary
 
 ### Fully Supported Features
@@ -281,10 +298,11 @@ The following Tello-SDK features have no standard API equivalent:
 - Emergency stop
 - Aerobatic flips
 - RC-style direct control
-- Advanced telemetry (barometer, attitude, acceleration, ToF)
+- Advanced telemetry (barometer, attitude, acceleration, ToF, serial number, SDK version)
 - Mission pad configuration
 - Communication mode settings (station mode, keep-alive)
 - Status monitoring
+- Utility methods (logging, connection state)
 
 ### Recommendations
 1. Document which methods throw `UnsupportedOperationException`
