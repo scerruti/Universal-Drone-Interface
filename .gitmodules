@@ -1,0 +1,6 @@
+[submodule "Tello-SDK"]
+	path = Tello-SDK
+	url = https://github.com/stemrobotics/Tello-SDK.git
+[submodule "JCoDroneEdu"]
+	path = JCoDroneEdu
+	url = https://github.com/scerruti/JCoDroneEdu.git

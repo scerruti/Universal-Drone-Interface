@@ -1,0 +1,26 @@
+# .gitignore for Basic Drone Project
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Python virtual environments (if any)
+.venv/
+
+# System files
+Thumbs.db
+
+# Ignore submodule build artifacts
+Tello-SDK/build/
+JCoDroneEdu/build/
